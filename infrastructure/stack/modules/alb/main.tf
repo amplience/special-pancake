@@ -26,15 +26,5 @@ resource "aws_alb_target_group" "main" {
   protocol    = "HTTP"
   vpc_id = var.vpc_id
   target_type = "ip" # type "ip" for awsvpc network mode
-
-#  health_check {
-#   healthy_threshold   = "1"
-#   interval            = "30"
-#   protocol            = "HTTP"
-#   matcher             = "200"
-#   timeout             = "3"
-#   path                = var.health_check_path
-#   unhealthy_threshold = "0"
-#  }
 }
 
