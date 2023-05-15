@@ -3,7 +3,7 @@ resource "aws_security_group" "ecs_tasks" {
   vpc_id = var.vpc_id
 
   egress {
-    description = "allow out to anywhere FIXME this should be narrowed down"
+    description = "allow out on any port to anywhere"
     protocol         = "-1"
     from_port        = 0
     to_port          = 0
