@@ -38,6 +38,6 @@ module "ecs" {
   vpc_id = data.aws_vpc.default_vpc.id
   subnets = data.aws_subnets.all_default_vpc_subnets.ids
   container_port = var.container_port
-  alb_target_group_arn = module.alb.target_group_arn # aws_alb_target_group.main.arn
+  alb_target_group_arn = module.alb.target_group_arn
   container_image = var.container_image
 }

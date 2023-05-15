@@ -1,5 +1,4 @@
 
-
 resource "aws_lb" "main" {
   name               = "${var.name}-alb"
   internal           = false

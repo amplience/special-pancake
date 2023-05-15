@@ -1,10 +1,8 @@
 #!/bin/bash
 set -euo pipefail
-set -x
+#set -x
 
-REPO_NAME=special-pancake-ecr-repository
-
-echo ${AWS_ACCOUNT}
+REPO_NAME=special-pancake
 
 docker build -t ${AWS_ACCOUNT}.dkr.ecr.${AWS_REGION}.amazonaws.com/${REPO_NAME} .
 

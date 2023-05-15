@@ -11,6 +11,6 @@ terraform {
 }
 
 resource "aws_ecr_repository" "main" {
-  name = "${var.name}-ecr-repository"
+  name = var.ecr_registry_name
   image_tag_mutability = "MUTABLE" # so latest can be tagged
 }
