@@ -46,7 +46,6 @@ export AWS_ACCOUNT=REDACTED
 
 # Step 1 - create ECR
 ```
-cd infrastructure/container-registry
 ./create-container-registry.sh
 ```
 
@@ -57,7 +56,6 @@ cd infrastructure/container-registry
 
 # Step 3 - create ECS stack
 ```
-cd infrastructure/stack
 ./create-stack.sh
 ```
 
