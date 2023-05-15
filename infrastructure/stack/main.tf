@@ -30,6 +30,8 @@ module "alb" {
   subnets = data.aws_subnets.all_default_vpc_subnets.ids
   container_port = var.container_port
   app_port = var.app_port
+
+  ecs_tasks_sg_id = module.ecs.sg_id
 }
 
 module "ecs" {
@@ -40,4 +42,6 @@ module "ecs" {
   container_port = var.container_port
   alb_target_group_arn = module.alb.target_group_arn
   container_image = var.container_image
+
+  lb_sg_id = module.alb.sg_id
 }

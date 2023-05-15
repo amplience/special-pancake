@@ -27,3 +27,8 @@ variable "container_image" {
   description = "the container image name, including repository"
   type = string
 }
+
+variable "lb_sg_id" {
+  description = "the load balancer sg"
+  type = string
+}

@@ -22,3 +22,7 @@ variable "app_port" {
   description = "the lb port exposing the application"
   type    = number
 }
+
+variable "ecs_tasks_sg_id" {
+  type = string
+}
