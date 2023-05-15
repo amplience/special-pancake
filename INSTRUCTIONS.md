@@ -44,6 +44,14 @@ export AWS_REGION=REDACTED
 export AWS_ACCOUNT=REDACTED
 ```
 
+# Step 0 - Init terraform
+```
+cd infrastructure/container-registry
+terraform init
+cd ../stack
+terraform init
+```
+
 # Step 1 - create ECR
 ```
 ./create-container-registry.sh
