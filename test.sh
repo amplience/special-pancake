@@ -3,4 +3,4 @@ set -euo pipefail
 #set -x
 
 res=$(wget ${1} -O -)
-echo $res
+echo Response body is: $res

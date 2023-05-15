@@ -12,7 +12,7 @@ resource "aws_security_group" "load_balancer_sg" {
   }
 
   egress {
-    description = "allow out to anywhere FIXME this should be narrowed down to at least the vpn subnets"
+    description = "allow out to anywhere FIXME this should be narrowed down"
     protocol         = "-1"
     from_port        = 0
     to_port          = 0

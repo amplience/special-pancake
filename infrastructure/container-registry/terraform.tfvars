@@ -1,1 +1,1 @@
-ecr_registry_name = "special-pancake"
+ecr_registry_name = "my-special-pancake"

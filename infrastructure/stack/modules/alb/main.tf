@@ -21,7 +21,7 @@ resource "aws_alb_listener" "main" {
 }
 
 resource "aws_alb_target_group" "main" {
-  name        = "${var.name}-alb-target-group"
+  name        = "${var.name}-alb-tg"
   port        = var.container_port # fargate container port has to be same as host port
   protocol    = "HTTP"
   vpc_id = var.vpc_id
