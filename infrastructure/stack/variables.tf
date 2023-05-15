@@ -1,16 +1,16 @@
 variable "name" {
   description = "the app name"
-  type    = string
+  type        = string
 }
 
 variable "app_port" {
-  type    = number
+  type = number
 }
 
 variable "container_port" {
-  type    = number
+  type = number
 }
 
 variable "container_image" {
-  type    = string
+  type = string
 }
